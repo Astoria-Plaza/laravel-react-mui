@@ -48,6 +48,9 @@ export { default as CCardAction } from "./Customs/Cards/CCardAction";
 // Containers
 export { default as CContainer } from "./Customs/Containers/CContainer";
 
+// Data Grids
+export { default as CDataGrid } from "./Customs/DataGrids/CDataGrid";
+
 // Grids
 export { default as CFormGrid } from "./Customs/Grids/CFormGrid";
 export { default as CFormRow } from "./Customs/Grids/CFormRow";
@@ -57,6 +60,7 @@ export { default as CModal } from "./Customs/Modals/CModal";
 
 // TextFields
 export { default as CTextField } from "./Customs/TextFields/CTextField";
+export { default as CSearchField } from "./Customs/TextFields/CSearchField";
 
 // Customs Components end
 
