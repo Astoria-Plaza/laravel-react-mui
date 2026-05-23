@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 
 const CButtonAdd = ({
-    size = "small",
+    size = "medium",
     variant = "contained",
     startIcon = <AddIcon />,
     children = "Add",

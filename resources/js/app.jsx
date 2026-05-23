@@ -18,6 +18,12 @@ createInertiaApp({
         return page;
     },
 
+    defaults: {
+        visitOptions: (href, options) => {
+            return { viewTransition: true };
+        },
+    },
+
     setup({ el, App, props }) {
         createRoot(el).render(
             <React.StrictMode>

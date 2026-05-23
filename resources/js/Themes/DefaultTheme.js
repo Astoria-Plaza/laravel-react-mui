@@ -7,6 +7,9 @@ const light = {
         accent: "#185D33",
         error: "#b71c1c",
         searchBg: "#FBFBFC",
+        textField: "#13294B",
+        closeText: "#13294B",
+
         text: {
             primary: "#111",
             secondary: "rgba(0,0,0,0.6)",
@@ -23,7 +26,8 @@ const dark = {
         accent: "#185D33",
         error: "#F44336",
         searchBg: "#252525",
-
+        textField: "#214a88",
+        closeText: "#214a88",
         text: {
             primary: "#fff",
             secondary: "rgba(255,255,255,0.7)",

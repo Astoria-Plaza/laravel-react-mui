@@ -1,10 +1,11 @@
 import Button from "@mui/material/Button";
+import EditIcon from "@mui/icons-material/Edit";
 
-const CButton = ({
+const CButtonEdit = ({
     size = "medium",
     variant = "contained",
-    loadingPosition = "start",
-    children,
+    startIcon = <EditIcon />,
+    children = "Edit",
     sx,
     ...props
 }) => {
@@ -12,7 +13,7 @@ const CButton = ({
         <Button
             size={size}
             variant={variant}
-            loadingPosition={loadingPosition}
+            startIcon={startIcon}
             sx={{ m: 1, ...sx }}
             {...props}
         >
@@ -21,4 +22,4 @@ const CButton = ({
     );
 };
 
-export default CButton;
+export default CButtonEdit;

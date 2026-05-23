@@ -1,10 +1,12 @@
 import Button from "@mui/material/Button";
+import CloseIcon from "@mui/icons-material/Close";
 
-const CButton = ({
+const CButtonClose = ({
     size = "medium",
-    variant = "contained",
-    loadingPosition = "start",
-    children,
+    variant = "text",
+    color = "closeText",
+    startIcon = <CloseIcon />,
+    children = "Close",
     sx,
     ...props
 }) => {
@@ -12,7 +14,8 @@ const CButton = ({
         <Button
             size={size}
             variant={variant}
-            loadingPosition={loadingPosition}
+            startIcon={startIcon}
+            color={color}
             sx={{ m: 1, ...sx }}
             {...props}
         >
@@ -21,4 +24,4 @@ const CButton = ({
     );
 };
 
-export default CButton;
+export default CButtonClose;

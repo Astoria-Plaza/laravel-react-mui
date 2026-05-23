@@ -1,7 +1,7 @@
 import Alert from "@mui/material/Alert";
 import { useState } from "react";
 
-const CAlertError = ({ children, ...props }) => {
+const CAlertSuccess = ({ children, ...props }) => {
     const [open, setOpen] = useState(true);
 
     if (!open) return null;
@@ -9,8 +9,8 @@ const CAlertError = ({ children, ...props }) => {
     return (
         <Alert
             variant="filled"
-            severity="error"
-            color="error"
+            severity="success"
+            color="success"
             onClose={() => setOpen(false)}
             {...props}
         >
@@ -19,4 +19,4 @@ const CAlertError = ({ children, ...props }) => {
     );
 };
 
-export default CAlertError;
+export default CAlertSuccess;

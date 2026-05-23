@@ -9,7 +9,14 @@ const buildPalette = (theme) => {
 
         primary: { main: theme.colors.primary },
         secondary: { main: theme.colors.secondary },
+        accent: { main: theme.colors.accent },
         error: { main: theme.colors.error },
+
+        // Custom palette entry for text fields
+        textField: { main: theme.colors.textField },
+
+        // Custom palette entry for close button text
+        closeText: { main: theme.colors.closeText },
 
         background: {
             default: theme.colors.background,
@@ -74,6 +81,13 @@ export const getTheme = (mode = "light") =>
                 defaultProps: {
                     variant: "outlined",
                 },
+            },
+        },
+
+        transitions: {
+            duration: {
+                enteringScreen: 400, // global default for entering
+                leavingScreen: 300, // global default for leaving
             },
         },
     });

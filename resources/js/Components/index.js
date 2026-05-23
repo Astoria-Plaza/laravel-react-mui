@@ -27,6 +27,7 @@
 // Alerts
 export { default as CAlert } from "./Customs/Alerts/CAlert";
 export { default as CAlertError } from "./Customs/Alerts/CAlertError";
+export { default as CAlertSuccess } from "./Customs/Alerts/CAlertSuccess";
 
 // Boxes
 export { default as CBox } from "./Customs/Boxes/CBox";
@@ -35,6 +36,9 @@ export { default as CBoxContent } from "./Customs/Boxes/CBoxContent";
 // Buttons
 export { default as CButton } from "./Customs/Buttons/CButton";
 export { default as CButtonAdd } from "./Customs/Buttons/CButtonAdd";
+export { default as CButtonEdit } from "./Customs/Buttons/CButtonEdit";
+export { default as CButtonClose } from "./Customs/Buttons/CButtonClose";
+export { default as CButtonSubmit } from "./Customs/Buttons/CButtonSubmit";
 
 // Cards
 export { default as CCard } from "./Customs/Cards/CCard";
@@ -43,6 +47,13 @@ export { default as CCardAction } from "./Customs/Cards/CCardAction";
 
 // Containers
 export { default as CContainer } from "./Customs/Containers/CContainer";
+
+// Grids
+export { default as CFormGrid } from "./Customs/Grids/CFormGrid";
+export { default as CFormRow } from "./Customs/Grids/CFormRow";
+
+// Modals
+export { default as CModal } from "./Customs/Modals/CModal";
 
 // TextFields
 export { default as CTextField } from "./Customs/TextFields/CTextField";

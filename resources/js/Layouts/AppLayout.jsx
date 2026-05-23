@@ -18,6 +18,7 @@ import {
     useTheme,
     useMediaQuery,
     Button,
+    Fade,
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
@@ -229,7 +230,9 @@ const AppLayout = ({ children }) => {
             <Main open={open} isMobile={isMobile}>
                 <DrawerHeader />
 
-                {children}
+                <Fade in={true} timeout={500}>
+                    <Box>{children}</Box>
+                </Fade>
             </Main>
 
             <Box
